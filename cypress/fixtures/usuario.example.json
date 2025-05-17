@@ -1,0 +1,12 @@
+{
+    "admin": {
+        "nomeSobrenomeValido": "informar-nome-sobrenome-usuario-admin-valido",
+        "emailValido": "informar-email-usuario-admin-valido@qa.com",
+        "senhaValida": "informar-senha-usuario-admin-valido"
+    },
+    "padrao": {
+        "nomeSobrenomeValido": "informar-nome-sobrenome-usuario-padrao-valido",
+        "emailValido": "informar-email-usuario-padrao-valido@outlook.com",
+        "senhaValida": "informar-senha-usuario-padrao-valido"
+    }
+}
