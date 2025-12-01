@@ -1,7 +1,7 @@
 {
   "name": "testes-automatizados-api-serve-rest_cypress",
   "version": "1.0.0",
-  "description": "Projeto de Testes Funcionais Automatizados de API na API REST do ServeRest em Cypress",
+  "description": "Projeto de Testes Funcionais Automatizados de API na API REST do ServeRest em Cypress v13.15.0",
   "main": "cypress.config.js",
   "scripts": {
     "cy:open": "cypress open",
