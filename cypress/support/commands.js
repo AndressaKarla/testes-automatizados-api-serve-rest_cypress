@@ -9,11 +9,11 @@ Cypress.Commands.add('obterPorEmailEexcluirUsuarioPorId', (email) => {
             'Accept': 'application/json'
         },
         failOnStatusCode: false
-    }).then(response => {
-        let retornoGet = response.body
+    }).then((response) => {
+        const retornoGet = response.body
 
         if ((retornoGet.quantidade) == 1) {
-            let idUsuarioRetornado = retornoGet.usuarios[0]._id
+            const idUsuarioRetornado = retornoGet.usuarios[0]._id
 
             cy.request({
                 method: 'DELETE',
@@ -47,5 +47,29 @@ Cypress.Commands.add('postUsuario', (nome, email, senha, admin) => {
         failOnStatusCode: false
     }).then((response) => {
         expect(response.status).to.eql(201)
+    })
+})
+
+Cypress.Commands.add('realizarLoginERetornarTokenAutorizacao', (email, senha) => {
+    cy.request({
+        method: 'POST',
+        url: '/login',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: {
+            "email": email,
+            "password": senha
+        },
+        failOnStatusCode: false
+    }).then((response) => {
+        expect(response.status).to.eql(200)
+
+        if (response.isOkStatusCode) {
+            const token = response.body.authorization
+
+            return token
+        }
     })
 })

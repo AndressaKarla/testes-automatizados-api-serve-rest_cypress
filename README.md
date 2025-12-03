@@ -133,7 +133,7 @@ code .
   - Salvar o arquivo "usuario.json" com os dados informados anteriormente
 
 ---
-# :dart: Executar testes automatizados E2E (ponta a ponta) e Gerar os resultados dos testes no computador
+# :dart: Executar testes automatizados de API REST e Gerar os resultados dos testes no computador
 ## :triangular_flag_on_post: Executar todas as funcionalidades e/ou cenários do projeto no navegador chrome em um ambiente de produção na interface gráfica do Cypress e Gerar os resultados dos testes no computador (cypress > screenshots)
 - Ter o navegador Chrome instalado
 - Abrir uma janela do "Explorador de Arquivos"
@@ -167,7 +167,7 @@ npm run test
 ```
 
 ---
-# :mag_right: Verificar os resultados das execuções dos testes automatizados e2e no computador 
+# :mag_right: Verificar os resultados das execuções dos testes automatizados de API REST no computador 
 ## :bookmark_tabs: Screenshots no computador
 - No VS Code aberto anteriormente, em "cypress > screenshots", acessar "nome-suite-testes.cy.js"
 
