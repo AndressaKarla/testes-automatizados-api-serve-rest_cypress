@@ -13,6 +13,8 @@ Este projeto "testes-automatizados-api-serve-rest_cypress" é executado em um am
     - https://docs.cypress.io/app/references/configuration#Videos
   - cypress-plugin-api:
     - https://www.npmjs.com/package/cypress-plugin-api/v/2.11.2
+  - Moment.js:
+    - https://momentjs.com
 
 ---
 # :warning: _Instruções considerando Windows 11, para outras versões do Windows ou outros sistemas operacionais talvez seja necessário algumas adaptações_
